@@ -1,44 +1,43 @@
-# PLEASE READ!
+# 请阅读！
 
 
-This is a Selenium bot for buying a given sneaker from the Nike Snkrs website ON RELEASE DAY.
-   It will not work for sneakers that are past their release day (or later in the release day).
-   `Please note that this script was written with the US site in mind, so Nike sites for other countries will likely cause problems.`
-   This is because the purchase page changes to where the buy button redirects to a seperate checkout page (as opposed to a direct buy popup during release).
-It is a commandline script written solely in python. `Please run with python 3.7.`
-There are 6 selenium drivers in the bin directory for both Chrome and Firefox on Linux, MacOS, and Winows. `The drivers for other operating systems need to be installed from the instructions below.`
-I have found the Firefox driver for MacOS works best.
+这是一个Selenium机器人，可以在发布日从Nike Snkrs网站购买指定的运动鞋。
+   它不适用于发布日之后（或发布日晚些时候）的运动鞋。
+   “请注意，此脚本是在美国网站上编写的，因此其他国家的耐克网站可能会引起问题。”
+    这是因为购买页面更改为“购买”按钮重定向到单独的结帐页面的位置（与发布期间的直接购买弹出窗口相对）。
+这是一个仅用python编写的命令行脚本。`请在python 3.7上运行。
+bin目录中有6个硒驱动程序，用于Linux，MacOS和Winows上的Chrome和Firefox。`需要按照以下说明安装其他操作系统的驱动程序。
+我发现适用于MacOS的Firefox驱动程序效果最好。
 
-Ideally, some pieces (or all?) of this could be replaced with direct Nike API requests instead of Selenium. However, I've found that Nike APIs are not very straightforward.
+理想情况下，可以用直接的Nike API请求而不是Selenium代替其中的某些（或全部？）。但是，我发现Nike API并不是很简单。
 
+# 入门
+运行机器人需要满足一些条件。首先，您需要安装Python 3.7或更高版本。以下说明向您展示了如何在多个操作系统中执行此操作
 
-# Getting started
+接下来，我们提供了适用于MacOS，Linux和Windows的Web驱动程序，但是如果它们不存在，或者您需要比随附的驱动程序更新的内容，则需要按照说明自行下载下面
 
-There are a few requirements to run the bot. First, you'll need to install `Python 3.7` or greater. The instructions below show you how to do this in several operating systems
+最后，程序从终端（命令行）运行，所以你应该从终端上运行的Python程序熟悉[这里]((https://realpython.com/run-python-scripts/))
 
-Next, we have provided the web drivers for MacOS, Linux, and Windows, but if they're not there, or you want something more up-to-date than the included drivers, you'll need to download them yourself with the instructions below
+## 下载python
 
-Finally, the program is run from the terminal (command line), so you should familiarize yourself with running python programs from the terminal [here](https://realpython.com/run-python-scripts/)
-
-## Downloading python
-
-
-This needs to be Python version `3.7` or up
+必须是Python版本 `3.7` 或更高版本
 
 MacOS
-   * From Python's official website [here](https://www.python.org/downloads/mac-osx/)
-   * If you have [brew](https://brew.sh) installed, you can just run the coommand `brew install python3`
+
+   * 从Python的官方网站 [here](https://www.python.org/downloads/mac-osx/)
+   * 如果您安装了 [brew](https://brew.sh) ，则可以运行 coommand `brew install python3`
 
 Linux
-   * From Python's official website [here](https://www.python.org/downloads/source/)
-   * Using the package manager for your system. With Ubuntu, this command is `sudo apt install python3-dev`
+
+   * 从Python的官方网站 [here](https://www.python.org/downloads/source/)
+   * 在系统上使用软件包管理器。对于Ubuntu，此命令是sudo apt install python3-dev
 
 Windows
-   * From Python's official website [here](https://www.python.org/downloads/windows/)
-   * If you have the [Chocolatey package manager](https://chocolatey.org/) installed, you can run `choco install python`
 
-1. The selenium webdrivers for your chosen browser
+   * 从Python的官方网站 [here](https://www.python.org/downloads/windows/)
+   * 如果您已安装 [Chocolatey package manager](https://chocolatey.org/) ，则可以运行 `choco install python`
 
+您选择的浏览器的Selenium Webdrivers
 
 ## Installing the web drivers
 
